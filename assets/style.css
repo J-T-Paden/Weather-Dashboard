@@ -9,3 +9,14 @@
     align-items: center;
     justify-content: center;
 }
+
+.container {
+    margin: 10px;
+    margin-left: 25px;
+    padding: 5px;
+    height: 100px;
+    width: 100px;
+    border: solid 5px;
+    border-radius: 15px;
+    display: flex;
+}

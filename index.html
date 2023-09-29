@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Link to bootstrap CSS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!--Link to my CSS-->
+    <!--Link to custom CSS-->
     <link rel="stylesheet" href="./assets/style.css">
     <title>Weather Dashboard</title>
 </head>
 <body>
     <header id="dashboard">Weather Dashboard</header>
-    <div class="row">
-        <div class="col-3 card">Search and cities</div>
-        <div class="col-9 card">City and 5 day forecast</div>
+    <div class="row justify-content-around">
+        <div class="col-3 flex-column container">Search for a city
+            <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="City..." aria-label="Search">
+            </div>
+        </div>
+        <div class="col-7 justify-content-center align-items-center container">5-day Forecast</div>
     </div>
-    
 
 <!--Bootstrap JavaScript links-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
