@@ -14,9 +14,27 @@
     margin: 10px;
     margin-left: 25px;
     padding: 5px;
-    height: 100px;
-    width: 100px;
+    height: 800px;
+    width: 150px;
     border: solid 5px;
     border-radius: 15px;
     display: flex;
+}
+.header {
+background-color: rgba(152, 30, 152, 0.563);
+width: 100%;
+color: white;
+font-size: 25px;
+}
+ul {
+    list-style: none;
+}
+
+.forecastDay {
+    display: flex;
+    flex-direction: row;
+}
+.forecastInfo {
+display: flex;
+align-items: start;
 }

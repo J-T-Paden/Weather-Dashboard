@@ -7,17 +7,73 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--Link to custom CSS-->
     <link rel="stylesheet" href="./assets/style.css">
+    <!--Link to Day JS Library-->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
     <title>Weather Dashboard</title>
 </head>
 <body>
     <header id="dashboard">Weather Dashboard</header>
     <div class="row justify-content-around">
-        <div class="col-3 flex-column container">Search for a city
+        <div id="citySearch" class="col-5 flex-column container">Search for a city
             <div class="input-group mb-3">
             <input type="text" class="form-control" placeholder="City..." aria-label="Search">
+            <button id="searchButton">Search</button>
             </div>
         </div>
-        <div class="col-7 justify-content-center align-items-center container">5-day Forecast</div>
+        <div class="col-5 flex-column container">
+            <div id="cityDateEl" class="justify-content-center align-items-center header">City and</div>
+            <ul>
+                <li>Temp:</li>
+                <li>Wind:</li>
+                <li>Humidity:</li>
+            </ul>
+            <div class="flex-row header">5-Day Forceast:</div>
+                <div class="col-2 forecastDay">Monday
+                    <div class="forecastInfo">
+                        <ul>
+                            <li>Temp:</li>
+                            <li>Humidity:</li>
+                            <li>Wind:</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-2 forecastDay">Tuesday
+                    <div class="forecastInfo">
+                        <ul>
+                            <li>Temp:</li>
+                            <li>Humidity:</li>
+                            <li>Wind:</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-2 forecastDay">Wednesday
+                    <div class="forecastInfo">
+                        <ul>
+                            <li>Temp:</li>
+                            <li>Humidity:</li>
+                            <li>Wind:</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-2 forecastDay">Thursday
+                    <div class="forecastInfo">
+                        <ul>
+                            <li>Temp:</li>
+                            <li>Humidity:</li>
+                            <li>Wind:</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-2 forecastDay">Friday
+                    <div class="forecastInfo">
+                        <ul>
+                            <li>Temp:</li>
+                            <li>Humidity:</li>
+                            <li>Wind:</li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
     </div>
 
 <!--Bootstrap JavaScript links-->
