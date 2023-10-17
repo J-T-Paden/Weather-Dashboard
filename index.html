@@ -14,21 +14,72 @@
 <body>
     <header id="dashboard">Weather Dashboard</header>
     <div class="row justify-content-around">
-        <div id="citySearch" class="col-5 flex-column container">Search for a city
-            <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="City..." aria-label="Search">
+        <select id="cityInput">
+            <option value="" selected disabled>Select a city!</option>
+            <option value='Montgomery'>Montgomery, Alabama</option>
+            <option value='Juneau'>Juneau, Alaska</option>
+            <option value='Phoenix'>Phoenix, Arizona</option>
+            <option value='Little Rock'>Little Rock, Arkansas</option>
+            <option value='Sacramento'>Sacramento, California</option>
+            <option value='Denver'>Denver, Colorado</option>
+            <option value='Hartford'>Hartford, Connecticut</option>
+            <option value='Dover'>Dover, Delaware</option>
+            <option value='Tallahassee'>Tallahassee, Florida</option>
+            <option value='Atlanta'>Atlanta, Georgia</option>
+            <option value='Honolulu'>Honolulu, Hawaii</option>
+            <option value='Boise'>Boise, Idaho</option>
+            <option value='Springfield'>Springfield, Illinois</option>
+            <option value='Indianapolis'>Indianapolis, Indiana</option>
+            <option value='Des Moines'>Des Moines, Iowa</option>
+            <option value='Topeka'>Topeka, Kansas</option>
+            <option value='Frankfort'>Frankfort, Kentucky</option>
+            <option value='Baton Rouge'>Baton Rouge, Louisiana</option>
+            <option value='Augusta'>Augusta, Maine</option>
+            <option value='Annapolis'>Annapolis, Maryland</option>
+            <option value='Boston'>Boston, Massachusetts</option>
+            <option value='Lansing'>Lansing, Michigan</option>
+            <option value='St. Paul'>St. Paul, Minnesota</option>
+            <option value='Jackson'>Jackson, Mississippi</option>
+            <option value='Jefferson City'>Jefferson City, Missouri</option>
+            <option value='Helena'>Helena, Montana</option>
+            <option value='Lincoln'>Lincoln, Nebraska</option>
+            <option value='Carson City'>Carson City, Nevada</option>
+            <option value='Concord'>Concord, New Hampshire</option>
+            <option value='Trenton'>Trenton, New Jersey</option>
+            <option value='Santa Fe'>Santa Fe, New Mexico</option>
+            <option value='Albany'>Albany, New York</option>
+            <option value='Raleigh'>Raleigh, North Carolina</option>
+            <option value='Bismarck'>Bismarck, North Dakota</option>
+            <option value='Columbus'>Columbus, Ohio</option>
+            <option value='Oklahoma City'>Oklahoma City, Oklahoma</option>
+            <option value='Salem'>Salem, Oregon</option>
+            <option value='Harrisburg'>Harrisburg, Pennsylvania</option>
+            <option value='Providence'>Providence, Rhode Island</option>
+            <option value='Columbia'>Columbia, South Carolina</option>
+            <option value='Pierre'>Pierre, South Dakota</option>
+            <option value='Nashville'>Nashville, Tennessee</option>
+            <option value='Austin'>Austin, Texas</option>
+            <option value='Salt Lake City'>Salt Lake City, Utah</option>
+            <option value='Montpelier'>Montpelier, Vermont</option>
+            <option value='Richmond'>Richmond, Virginia</option>
+            <option value='Olympia'>Olympia, Washington</option>
+            <option value='Charleston'>Charleston, West Virginia</option>
+            <option value='Madison'>Madison, Wisconsin</option>
+            <option value='Cheyenne'>Cheyenne, Wyoming</option>
+        </select>
             <button id="searchButton">Search</button>
             </div>
         </div>
-        <div class="col-5 flex-column container">
-            <div id="cityDateEl" class="justify-content-center align-items-center header">City and</div>
+        <div class="w-auto flex-column container">
+            <div id="cityDateEl" class="justify-content-center align-items-center header">City and date</div>
             <ul>
-                <li>Temp:</li>
-                <li>Wind:</li>
-                <li>Humidity:</li>
+                <li id="currentTemp">Temperature: </li>
+                <li id="windSpeed">Wind Speed: </li>
+                <li id="humidity">Humidity: </li>
             </ul>
             <div class="flex-row header">5-Day Forceast:</div>
-                <div class="col-2 forecastDay">Monday
+                <div class="col-2 forecastDay">
+                    <span id="day1"></span>
                     <div class="forecastInfo">
                         <ul>
                             <li>Temp:</li>
@@ -37,7 +88,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-2 forecastDay">Tuesday
+                <div class="col-2 forecastDay">
+                    <span id="day2"></span>
                     <div class="forecastInfo">
                         <ul>
                             <li>Temp:</li>
@@ -46,7 +98,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-2 forecastDay">Wednesday
+                <div class="col-2 forecastDay">
+                    <span id="day3"></span>
                     <div class="forecastInfo">
                         <ul>
                             <li>Temp:</li>
@@ -55,7 +108,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-2 forecastDay">Thursday
+                <div class="col-2 forecastDay">
+                    <span id="day4"></span>
                     <div class="forecastInfo">
                         <ul>
                             <li>Temp:</li>
@@ -64,7 +118,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-2 forecastDay">Friday
+                <div class="col-2 forecastDay">
+                    <span id="day5"></span>
                     <div class="forecastInfo">
                         <ul>
                             <li>Temp:</li>
